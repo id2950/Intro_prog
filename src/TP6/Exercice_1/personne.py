@@ -1,4 +1,3 @@
-from datetime import date
 
 
 class Personne:
@@ -15,19 +14,17 @@ class Personne:
         self._licenciement = False
         self._rupture_amiable = False
 
-
     @property
     def demission(self):
-        return self._demission
+        return self.__demission
 
     @property
     def licenciement(self):
-        return self._licenciement
+        return self.__licenciement
 
     @property
     def rupture_amiable(self):
-        return self._rupture_amiable
-
+        return self.__rupture_amiable
 
     def mise_a_jour_demission(self):
         self._demission = True

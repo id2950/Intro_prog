@@ -8,16 +8,16 @@ class Entreprise:
         self._nombre_licenciements = 0
         self._nombre_ruptures_amiable = 0
     
-    __property
-    def nombre_demissions(self):
+    @property
+    def __nombre_demissions__(self):
         return self._nombre_demissions
 
-    __property
-    def nombre_licenciements(self):
+    @property
+    def __nombre_licenciements__(self):
         return self._nombre_licenciements
 
-    __property
-    def nombre_ruptures_amiable(self):
+    @property
+    def __nombre_ruptures_amiable__(self):
         return self._nombre_ruptures_amiable
     
 
